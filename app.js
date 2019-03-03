@@ -1,10 +1,10 @@
 var express = require("express");
-var app = express();
-var hackerRoutes = require("./routes/hackerRoutes");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
+var hackerRoutes = require("./routes/hackerRoutes");
 var seed = require("./seed");
 
+var app = express();
 mongoose.connect("mongodb://localhost:27017/cruzHacks", {
   useNewUrlParser: true
 });
